@@ -18,7 +18,8 @@ const App = () => {
 
   return (
     <>
-      <h2>Our Tours</h2>
+      <h2 className="title">Our Tours</h2>
+      <div className="title-underline"></div>
       {data && data.length === 0 ? (
         <button onClick={async () => setData(await (await fetch(url)).json())}>
           Refresh
